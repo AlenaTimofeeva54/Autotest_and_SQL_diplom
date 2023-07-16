@@ -1,3 +1,5 @@
+# Алена Тимофеева, 6-я когорта — Финальный проект. Инженер по тестированию плюс
+
 import sender_stand_request
 
 def positiv_assert():
