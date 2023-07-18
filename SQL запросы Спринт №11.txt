@@ -1,12 +1,11 @@
 Задача №1.
 
 SELECT c.login,
-       COUNT(o."inDelivery") AS vdostavke
+       COUNT(o.track)
 FROM "Couriers" AS c
-INNER JOIN "Orders" AS o ON o."courierId" = c.ID
-WHERE o."inDelivery" = 'true'
-  AND o.finished = 'f'
-GROUP BY c.id;
+INNER JOIN "Orders" AS o ON c.id = o."courierId"
+WHERE o."inDelivery"=true
+GROUP BY c.login;
 
 Задача №2.
 
